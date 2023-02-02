@@ -61,9 +61,30 @@
   display: inline-block;
   min-width: 326px;
   width: 326px;
-  padding: 10px;
+  padding: 16px;
   margin-right: 16px;
   border-radius: 4px;
+}
+.page__container__col__wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+}
+.page__container__col__wrap__badge {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: unset;
+}
+.page__container__col__wrap__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 20px;
+  color: #404040;
 }
 .page__container__col--primary {
   background: #f7feff;
@@ -117,4 +138,40 @@
   background: #fff;
   color: #1e1f21;
   border: 1px solid #e0e0e0;
+}
+.button--blank {
+  background: none;
+  color: #404040;
+  font-weight: 400;
+  box-shadow: none;
+  padding: 0;
+}
+.badge {
+  display: inline-block;
+  padding: 2px 8px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  border-radius: 4px;
+}
+.badge--primary {
+  background: #f7feff;
+  color: #01959f;
+  border: 1px solid #01959f;
+}
+.badge--secondary {
+  background: #fffcf5;
+  color: #feeabc;
+  border: 1px solid #feeabc;
+}
+.badge--danger {
+  background: #fffafa;
+  color: #f5b1b7;
+  border: 1px solid #f5b1b7;
+}
+.badge--success {
+  background: #f8fbf9;
+  color: #b8dbca;
+  border: 1px solid #b8dbca;
 }
