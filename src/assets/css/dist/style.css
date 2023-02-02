@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&family=Nunito+Sans:wght@200;300;400;600;700&family=Nunito:ital,wght@0,400;0,500;0,600;0,700;1,500;1,600&family=Roboto:wght@400;500&family=Rubik:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito Sans';
+  transition: all 0.3s ease-in-out;
+}
+*::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+  display: none;
+}
+*::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+*::-webkit-scrollbar-thumb {
+  background: #888;
+}
+*::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.page {
+  min-width: 100vw;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: unset;
+}
+.page__navbar {
+  width: 100%;
+  padding: 18px 20px;
+  border-bottom: 1px solid #e0e0e0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+.page__navbar__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  color: #1e1f21;
+}
+.page__container {
+  width: 100%;
+}
+.page__container__row {
+  padding: 24px;
+}
+.page__container__row--horizontal-scroll {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+.page__container__col {
+  display: inline-block;
+  min-width: 326px;
+  width: 326px;
+  padding: 10px;
+  margin-right: 16px;
+  border-radius: 4px;
+}
+.page__container__col--primary {
+  background: #f7feff;
+  border: 1px solid #01959f;
+}
+.page__container__col--secondary {
+  background: #fffcf5;
+  border: 1px solid #feeabc;
+}
+.page__container__col--danger {
+  background: #fffafa;
+  border: 1px solid #f5b1b7;
+}
+.page__container__col--success {
+  background: #f8fbf9;
+  border: 1px solid #b8dbca;
+}
+.button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 16px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 1px 2px rgba(0,0,0,0.12);
+}
+.button__icon {
+  width: 12px;
+  height: 12px;
+}
+.button--primary {
+  background: #01959f;
+  color: #fff;
+}
+.button--primary:hover {
+  background: rgba(1,149,159,0.7);
+}
+.button--danger {
+  background: #e11428;
+  color: #fff;
+}
+.button--white {
+  background: #fff;
+  color: #1e1f21;
+  border: 1px solid #e0e0e0;
+}

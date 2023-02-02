@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&family=Nunito+Sans:wght@200;300;400;600;700&family=Nunito:ital,wght@0,400;0,500;0,600;0,700;1,500;1,600&family=Roboto:wght@400;500&family=Rubik:wght@300&display=swap');
+
+*
+    margin 0
+    padding 0
+    box-sizing: border-box
+    font-family: 'Nunito Sans'
+    transition: all .3s ease-in-out
+    &::-webkit-scrollbar
+        width: 7px
+        height: 7px
+        display: none
+    &::-webkit-scrollbar-track
+        background: #f1f1f1; 
+    &::-webkit-scrollbar-thumb
+        background: #888; 
+        &:hover
+            background: #555; 
+
+// c = color, cs = color second
+
+c_primary = #01959F
+cs_primary = #F7FEFF
+c_secondary = #FEEABC
+cs_secondary = #FFFCF5
+c_danger = #F5B1B7
+cs_danger = #FFFAFA
+c_success = #B8DBCA
+cs_success = #F8FBF9
+c_green = #43936C
+c_black = #1E1F21
+c_white = #fff
+c_red = #E11428
+c_neutral = #E0E0E0
+
+flex(direction = row, justifyContent = flex-start, AlignItems = flex-start, gap = unset)
+    display flex
+    flex-direction direction
+    justify-content justifyContent
+    align-items AlignItems
+    gap gap
+  
+.page
+    min-width 100vw
+    position relative
+    flex(column, flex-start, flex-start)
+    &__navbar 
+        width 100%
+        padding 18px 20px
+        border-bottom: 1px solid c_neutral
+        flex(row, flex-start, center, 10px)
+        &__title
+            font-style: normal
+            font-weight: 700
+            font-size: 18px
+            line-height: 28px
+            color c_black
+    &__container
+        width 100%
+        &__row
+            padding 24px
+            &--horizontal-scroll
+                overflow-x scroll
+                overflow-y hidden
+                white-space: nowrap
+        &__col
+            display: inline-block
+            min-width 326px
+            width 326px
+            padding 10px
+            margin-right: 16px
+            border-radius: 4px
+            &--primary
+                background: cs_primary
+                border 1px solid c_primary
+            &--secondary
+                background: cs_secondary
+                border 1px solid c_secondary
+            &--danger
+                background: cs_danger
+                border 1px solid c_danger
+            &--success
+                background: cs_success
+                border 1px solid c_success
+
+
+
+
+// Components Style
+
+// Button
+
+.button
+    outline none 
+    border none 
+    cursor pointer
+    flex(row, flex-start, center, 5px)
+    padding 4px 16px
+    font-style: normal
+    font-weight: 700
+    font-size: 12px
+    line-height: 20px
+    border-radius: 8px
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.12);
+    &__icon
+        width 12px
+        height 12px
+    &--primary
+        background: c_primary
+        color c_white 
+        &:hover
+            background: rgba(c_primary, 0.7)
+    &--danger
+        background: c_red
+        color c_white
+    &--white
+        background: c_white
+        color c_black
+        border: 1px solid #E0E0E0;
