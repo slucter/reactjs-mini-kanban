@@ -1,6 +1,6 @@
 import iconPlus from '../assets/svg/plus.svg'
 import iconPlusRounded from '../assets/svg/u_plus-circle.svg'
-import { Badge, Button } from '../components'
+import { Badge, Button, Card } from '../components'
 
 export function Dashboard () {
     return (
@@ -21,6 +21,7 @@ export function Dashboard () {
                                 <Badge theme="primary">Group Task 1</Badge>
                             </div>
                             <span className="page__container__col__wrap__title">January - March</span>
+                            <Card />
                             <Button theme="blank">
                                 <img src={iconPlusRounded} alt="icon"></img>
                                 New task
